@@ -5,4 +5,12 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="analyze_app_reviews">Analyze App Reviews</string>
+    <string name="select_an_app">Select an App</string>
+    <string name="view_negative_reviews">View Negative Reviews</string>
+    <string name="extreme_polland">Extreme polland</string>
+    <string name="_2">2</string>
+    <string name="analyse_app_reviews">Analyze App Reviews</string>
+    <string name="rating">Rating</string>
+    <string name="download_csv">Download CSV</string>
 </resources>

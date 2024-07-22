@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "534153813577",
+    "firebase_url": "https://review-app-cf23f-default-rtdb.firebaseio.com",
+    "project_id": "review-app-cf23f",
+    "storage_bucket": "review-app-cf23f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534153813577:android:5cfa32b9e80752faaee998",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHXeBraaE6QPaCl34IJ3HjDnvcdk1mpjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534153813577:android:b13ef2f94c21d3baaee998",
+        "android_client_info": {
+          "package_name": "com.example.reviewapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHXeBraaE6QPaCl34IJ3HjDnvcdk1mpjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

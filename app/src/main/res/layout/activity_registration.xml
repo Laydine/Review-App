@@ -5,13 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
     tools:context=".Registration">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/register"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Welcome"
         android:gravity="center"
+        android:textStyle="italic"
+        android:textColor="@color/black"
         android:id="@+id/wlcm"
         android:layout_marginTop="30dp"
         android:textSize="25sp"
@@ -23,7 +34,8 @@
         android:hint="@string/first_name"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
         android:id="@+id/FN"
         android:inputType="text" />
 
@@ -31,21 +43,24 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:hint="@string/second_name"
         android:inputType="text"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/SN"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:hint="Email"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginTop="15dp"
+        android:drawableEnd="@drawable/ic_email"
+        android:layout_marginTop="20dp"
         android:id="@+id/EM"
         />
 
@@ -55,8 +70,22 @@
         android:hint="Password"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/password"
         android:id="@+id/PSWRD"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/password"
+        android:id="@+id/PSRD"
         />
 
     <Button
@@ -67,6 +96,27 @@
         android:id="@+id/REGISTER"
         android:layout_marginTop="40dp"/>
 
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_below="@+id/REGISTER"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? SIGN IN"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:id="@+id/loginLink"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
 
 
 

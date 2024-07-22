@@ -4,7 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".Login">
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <ImageView
+      android:layout_width="410dp"
+      android:layout_height="200dp"
+      android:layout_marginTop="10dp"
+      android:layout_gravity="center"
+      android:src="@drawable/logins"/>
+  </LinearLayout>
 
   <EditText
       android:layout_width="match_parent"
@@ -13,10 +29,11 @@
       android:id="@+id/EMAIL"
       android:layout_marginEnd="30dp"
       android:layout_marginStart="40dp"
-      android:layout_marginTop="80dp"
+      android:layout_marginTop="250dp"
       android:inputType="text"
-      android:autofillHints=""
-      tools:ignore="TextFields" />
+      android:textStyle="bold"
+      tools:ignore="TextFields"
+      android:drawableEnd="@drawable/ic_email"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -26,10 +43,12 @@
         android:layout_marginEnd="30dp"
         android:layout_marginStart="40dp"
         android:layout_below="@+id/EMAIL"
-        android:layout_marginTop="80dp"
-        android:autofillHints=""
-        android:inputType="text"
-        tools:ignore="TextFields" />
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        tools:ignore="TextFields"
+        android:drawableEnd="@drawable/password"
+        />
 
     <Button
         android:layout_width="match_parent"
@@ -37,11 +56,31 @@
         android:text="@string/login"
         android:id="@+id/LOGIN"
         android:textSize="20sp"
-        android:gravity="center"
         android:layout_below="@+id/PASSWORD"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginStart="90dp"
+        android:layout_marginTop="80dp"
+      android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
         />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:text="Don't have an account? SIGN UP"
+    android:id="@+id/registerLink"
+    android:layout_below="@+id/LOGIN"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal"
+      android:textColor="@color/white"
+      android:textSize="15dp"
+    android:textStyle="italic"/>
+
+  <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:visibility="gone"
+      android:layout_below="@+id/LOGIN"
+      />
 
 </RelativeLayout>
